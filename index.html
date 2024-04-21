@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Answering Interface</title>
+</head>
+<body>
+    <h1>Question Answering with FastAPI</h1>
+    <form id="qaForm">
+        <div>
+            <label for="context">Context:</label><br>
+            <textarea id="context" name="context" rows="4" cols="50" placeholder="Enter context here..."></textarea>
+        </div>
+        <div>
+            <label for="question">Question:</label><br>
+            <input type="text" id="question" name="question" placeholder="Enter your question">
+        </div>
+        <button type="button" onclick="submitQuestion()">Submit Question</button>
+    </form>
+    <h2>Answer:</h2>
+    <p id="answer"></p>
+
+    <script src="app.js"></script>
+</body>
+</html>
